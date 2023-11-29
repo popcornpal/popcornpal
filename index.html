@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopcornPal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: darkcyan;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: 	#0e0b0b;
+            padding: 16.5em;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 1.5em;
+            letter-spacing: 1px; /* Decrease letter-spacing for both words */
+        }
+
+        h1 span {
+            display: inline-block;
+            color: #0099ff; /* Blue color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: colorChange 5s infinite alternate; /* Color animation */
+            transition: transform 0.3s ease-in-out; /* Smooth scaling animation */
+        }
+
+        h1 span:hover {
+            transform: scale(1.2); /* Scale up on hover */
+        }
+
+        /* Apply different styles to individual letters in "movie" */
+        h1 span:nth-child(1) {
+            color: #0099ff; /* Blue */
+        }
+
+        h1 span:nth-child(2) {
+            color: #005cbf; /* Darker Blue */
+        }
+
+        h1 span:nth-child(3) {
+            letter-spacing: 1px; /* Decrease letter-spacing for the word "movie" */
+            color: #66ccff; /* Light Blue */
+        }
+
+        h1 span:nth-child(4) {
+            color: #003366; /* Navy Blue */
+        }
+
+        h1 span:nth-child(5) {
+            color: #66b2ff; /* Sky Blue */
+        }
+
+        /* Apply different styles to the entire word "PopcornPal" */
+        h1 .popcornPal {
+            font-weight: bold; /* Bold font */
+            text-shadow: 2px 2px 4px rgba(0, 51, 102, 0.7); /* Navy Blue shadow */
+            font-style: italic; /* Italic font */
+            letter-spacing: 1px; /* Decrease letter-spacing for the word "PopcornPal" */
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #0099ff;
+            }
+            50% {
+                color: #005cbf; /* Darker Blue */
+            }
+            100% {
+                color: #0099ff;
+            }
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Styling for the "About Me" page link */
+        a {
+            color: #ffcc00; /* Yellow color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #ff9900; /* Orange color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <span class="pop">POPCORN PAL</span>
+        </h1>
+    </header>
+
+    <main>
+        <p>Discover your favorite movies with our stylish movie bot!</p>
+        <div id="embeddedModule">
+            <!-- Your Voiceflow embedded module goes here -->
+        </div>
+        <p><a href="about.html">About Us</a></p>
+    </main>
+
+    <!-- Include your script.js file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
